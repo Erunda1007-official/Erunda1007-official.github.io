@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЕРУНДА1007</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://yt3.googleusercontent.com/1howF4dPLCQKJXOuwuEe_-2R-wfo3BgXL_NnZfOaoENX7ztXqQeUA-eEA6u4S_MAMV3N_dHTg0A=s800-c-k-c0x00ffffff-no-rj" type="image/jpeg">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Rubik Mono One', monospace;
+            padding: 20px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 3px solid #ff0000;
+            padding: 30px;
+            background-color: #121212;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+            position: relative;
+        }
+
+        .header {
+            color: #ff0000;
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            width: 40%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #ff0000, transparent);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 35px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            transition: all 0.3s;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .menu a:hover {
+            color: #ff0000;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+        }
+
+        .menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #ff0000;
+            transition: width 0.3s;
+        }
+
+        .menu a:hover::after {
+            width: 80%;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .image-container {
+            width: 280px;
+            height: 280px;
+            border: 3px solid #ff0000;
+            overflow: hidden;
+            position: relative;
+            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .image-container:hover {
+            transform: scale(1.02);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .highlight {
+            color: #ff0000;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+        }
+
+        .section-title {
+            color: #ff0000;
+            font-size: 24px;
+            margin: 35px 0 25px 0;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .first-paragraph {
+            text-indent: 25px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .first-paragraph::first-letter {
+            font-size: 120%;
+            color: #ff0000;
+        }
+
+        .corner-decoration {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ff0000;
+        }
+
+        .corner-tl {
+            top: 0;
+            left: 0;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .corner-tr {
+            top: 0;
+            right: 0;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .corner-bl {
+            bottom: 0;
+            left: 0;
+            border-right: none;
+            border-top: none;
+        }
+
+        .corner-br {
+            bottom: 0;
+            right: 0;
+            border-left: none;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="corner-decoration corner-tl"></div>
+        <div class="corner-decoration corner-tr"></div>
+        <div class="corner-decoration corner-bl"></div>
+        <div class="corner-decoration corner-br"></div>
+        
+        <div class="header">ЕРУНДА1007</div>
+        
+        <div class="menu">
+            <a href="#">УЧАСТНИКИ</a>
+            <a href="#">ПЛЕЙЛИСТЫ</a>
+            <a href="#">СОЦСЕТИ</a>
+        </div>
+        
+        <div class="content">
+            <div class="text-content">
+                <div class="first-paragraph">ЕРУНДА1007 - КАНАЛ НА ПЛАТФОРМЕ RUTUBE, НА КАНАЛ ВЫХОДЯТ КАК ВИДЕО ПРО РАЗНЫЕ ПЛЕЙСЫ В МНОГОПОЛЬЗОВАТЕЛЬСКОЙ ИГРЕ <span class="highlight">ROBLOX</span>, ТАК И МИНИ-ХОРРОР СЕРИАЛ <span class="highlight">"СТРАХ И СМЕХ"</span>.</div>
+                
+                <div>ВЕДУТ ЕГО УЧАСТНИКИ КАНАЛА: <span class="highlight">ILYASHON</span> И <span class="highlight">KIMAN</span><br>
+                (РАНЕЕ ИЗВЕСТНЫЕ КАК <span class="highlight">ИЛЮХА1007</span> И <span class="highlight">ЯРОК1007</span>).</div>
+                
+                <div class="section-title">ИДЕЯ</div>
+                <div>В ОСНОВЕ КАНАЛ ЛЕЖИТ ИДЕЯ, НА ИДЕЕ СТРОЯТСЯ ПОСЛЕДУЮЩИЕ ВИДЕО И ПЛАНЫ КАНАЛА. НАША ЖЕ ИДЕЯ ЗАКЛЮЧАЕТСЯ В ТОМ, ЧТОБЫ РАЗВЛЕКАТЬ И НЕ ТОЛЬКО АУДИТОРИЮ СВОИМИ ВИДЕО.</div>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://pic.rutubelist.ru/user/2024-12-02/54/01/540144003215e66331033a63c5c7ba4d.jpg" alt="ЕРУНДА1007">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
