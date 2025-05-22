@@ -18,7 +18,6 @@
 
         .container {
             max-width: 100%;
-            max-height: 100%;
             margin: 0 auto;
             border: 3px solid #ff0000;
             padding: 30px;
@@ -52,7 +51,8 @@
         .menu {
             display: flex;
             justify-content: center;
-            gap: 40px;
+            flex-wrap: wrap;
+            gap: 20px;
             margin-bottom: 35px;
             padding-bottom: 15px;
             border-bottom: 1px solid #333;
@@ -63,7 +63,7 @@
             text-decoration: none;
             font-size: 18px;
             text-transform: uppercase;
-            padding: 10px 20px;
+            padding: 10px 15px;
             transition: all 0.3s;
             position: relative;
             letter-spacing: 1px;
@@ -92,17 +92,30 @@
 
         .content {
             display: flex;
+            flex-direction: column;
             gap: 40px;
             margin-bottom: 20px;
         }
 
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+            }
+        }
+
         .text-content {
             flex: 1;
-            width: 600px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .text-content {
+                width: 600px;
+            }
         }
 
         .image-container {
-            width: 280px;
+            width: 100%;
             height: 280px;
             border: 3px solid #ff0000;
             overflow: hidden;
@@ -110,6 +123,14 @@
             flex-shrink: 0;
             box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
             transition: transform 0.3s;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .image-container {
+                width: 280px;
+                margin-top: 0;
+            }
         }
 
         .image-container:hover {
@@ -182,9 +203,16 @@
             font-size: 17px;
         }
         .rick {
-        font-size: 3px;
-        text-decoration: none;
-        color: black;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            font-size: 1px;
+            color: transparent;
+            text-decoration: none;
+            z-index: 9999;
+        }
+        .rick:hover {
+            color: transparent;
         }
     </style>
 </head>
@@ -195,7 +223,7 @@
         <div class="corner-decoration corner-bl"></div>
         <div class="corner-decoration corner-br"></div>
         
-        <div class="header"><p>ЕРУНДА1007</p><a href="rickroll.html"><p class="rick">Нажми сюда</p></a></div>
+        <div class="header"><p>ЕРУНДА1007</p></div>
         
         <div class="menu">
             <a href="#">УЧАСТНИКИ</a>
@@ -218,6 +246,7 @@
                 <img src="https://pic.rutubelist.ru/user/2024-12-02/54/01/540144003215e66331033a63c5c7ba4d.jpg" alt="ЕРУНДА1007">
             </div>
         </div>
+        <a href="https://steamuserimages-a.akamaihd.net/ugc/934931664793124225/D9861E4A35F464C8EE9E5B3B58BA2E02B352B743/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" class="rick" target="_blank">.</a>
     </div>
 </body>
 </html>
